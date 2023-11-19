@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 
 // Replace the URL with your actual value
-const targetURL = 'https://now.gg/';
+const targetURL = 'https://discord.com/';
 
 // Middleware to parse cookies
 app.use(cookieParser());
