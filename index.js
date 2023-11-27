@@ -7,7 +7,7 @@ const path = require('path');
 const app = express();
 
 // Replace the URL and cookies with your actual values
-const targetURL = 'https://ngabc321.hehemaths.gq/';
+const targetURL = 'https://educationbluesky.com/';
 
 const cookies = [
   // ... (your cookie objects here)
@@ -18,22 +18,12 @@ app.use(cookieParser());
 
 // Redirect after 2 seconds
 app.get('/redirect2', (req, res) => {
-  res.redirect(302, '/class?domain=cod');
+  res.redirect(302, '/class?domain=roblox');
 });
 
 // Redirect after 10 seconds
 app.get('/redirect10', (req, res) => {
-  res.redirect(302, '/uv/education/hvtrs8%2F-nmw%2Cge%2Frlcy-aatkvkskol-ru%60lksjilg%2Filc-7%3B37%2Faanl%2Fod-fuvy');
-});
-
-// Redirect after 2 seconds
-app.get('/redirect1', (req, res) => {
-  res.redirect(302, '/stumble?domain=stumble');
-});
-
-// Redirect after 10 seconds
-app.get('/redirect9', (req, res) => {
-  res.redirect(302, '/uv/education/hvtrs8%2F-nmw%2Cge%2Frlcy-kktia%2Fgcmgs-7%3B9%3B%2Fqtwm%60lg-eu%7Bs');
+  res.redirect(302, '/uv/education/hvtrs8%2F-nmw%2Cge%2Frlcy-ulcwbg%2F5054-nmw');
 });
 
 // Serve the index.html when explicitly requested
@@ -41,11 +31,30 @@ app.get('/redirect9', (req, res) => {
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
+// Serve the index.html when explicitly requested
+// Serve the index.html when explicitly requested
+app.get('/loading.mp4', (req, res) => {
+  res.sendFile(path.join(__dirname, '/loading.mp4'));
+});
 
-// Serve the index.html when explicitly requested
-// Serve the index.html when explicitly requested
-app.get('stumble.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'stumble.html'));
+app.get('/play/kitika-games/7999/stumble-guys.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/kitika-games/7999/stumble-guys.html'));
+});
+
+app.get('/play/activision-publishing-inc/7935/call-of-duty.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/activision-publishing-inc/7935/call-of-duty.html'));
+});
+
+app.get('/play/playducky/7199/melon-sandbox.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/playducky/7199/melon-sandbox.html'));
+});
+
+app.get('/play/psyonix-studios/4656/rocket-league.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/psyonix-studios/4656/rocket-league.html'));
+});
+
+app.get('/play/uncube/7074/now.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/uncube/7074/now.html'));
 });
 
 // Proxy middleware to add cookies to the request
@@ -63,14 +72,6 @@ const proxyMiddleware = createProxyMiddleware({
 // Use the proxy middleware for everything else
 app.use((req, res, next) => {
   if (req.url !== '/index.html' && req.url !== '/redirect2' && req.url !== '/redirect10') {
-    proxyMiddleware(req, res, next);
-  } else {
-    next();
-  }
-});
-
-app.use((req, res, next) => {
-  if (req.url !== '/stumble.html' && req.url !== '/redirect1' && req.url !== '/redirect9') {
     proxyMiddleware(req, res, next);
   } else {
     next();
