@@ -57,6 +57,18 @@ app.get('/play/psyonix-studios/4656/rocket-league.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/play/psyonix-studios/4656/rocket-league.html'));
 });
 
+app.get('/play/electronic-arts/1353/ea-sports-fc-mobile-24-soccer.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/electronic-arts/1353/ea-sports-fc-mobile-24-soccer.html'));
+});
+
+app.get('/play/pixel-gun-3d/2652/pixel-gun.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/pixel-gun-3d/2652/pixel-gun.html'));
+});
+
+app.get('/play/devsisters-corporation/3475/cookie-run.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/devsisters-corporation/3475/cookie-run.html'));
+});
+
 app.get('/play/uncube/7074/now.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/play/uncube/7074/now.html'));
 });
