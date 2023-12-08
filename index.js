@@ -37,6 +37,10 @@ app.get('/loading.mp4', (req, res) => {
   res.sendFile(path.join(__dirname, '/loading.mp4'));
 });
 
+app.get('/checksum.txt', (req, res) => {
+  res.sendFile(path.join(__dirname, '/checksum.txt'));
+});
+
 app.get('/play/kitika-games/7999/stumble-guys.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/play/kitika-games/7999/stumble-guys.html'));
 });
