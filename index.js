@@ -73,6 +73,10 @@ app.get('/play/uncube/7074/now.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/play/uncube/7074/now.html'));
 });
 
+app.get('/play/epic-games/7308/fortnite.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/epic-games/7308/fortnite.html'));
+});
+
 // Proxy middleware to add cookies to the request
 const proxyMiddleware = createProxyMiddleware({
   target: targetURL,
