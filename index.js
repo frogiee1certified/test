@@ -46,7 +46,7 @@ const proxyMiddleware = createProxyMiddleware({
 
 // Use the proxy middleware for everything else
 app.use((req, res, next) => {
-  if (req.url !== '/index.html' && req.url !== '/redirect2' && req.url !== '/redirect10') {
+  if (req.url !== '/what.html' && req.url !== '/redirect2' && req.url !== '/redirect10') {
     proxyMiddleware(req, res, next);
   } else {
     next();
