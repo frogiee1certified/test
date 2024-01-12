@@ -65,6 +65,10 @@ app.get('/play/pixel-gun-3d/2652/pixel-gun.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/play/pixel-gun-3d/2652/pixel-gun.html'));
 });
 
+app.get('/play/play/robtop-games/1400/geometry-dash.html', (req, res) => {
+  res.sendFile(path.join(__dirname, '/play/robtop-games/1400/geometry-dash.html'));
+});
+
 app.get('/play/devsisters-corporation/3475/cookie-run.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/play/devsisters-corporation/3475/cookie-run.html'));
 });
