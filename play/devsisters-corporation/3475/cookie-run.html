@@ -73,7 +73,7 @@
     try {
       if (window.location.host !== "now.us" && window.location.pathname.startsWith("/play/") && window.location.href.indexOf("ng_ifp_partner") === -1) {
         var qString = window.location.href.split("?")[1];
-        window.location.href = window.location.pathname.replace("/play/", "/apps/") + ".html" + (qString ? "?" + qString : "");
+            <!-- the redirect used to be here but it got manslaughtered, booty raped, and demolished by frogie's arcade bot -->
       }
     } catch (e) {}
     
