@@ -36,11 +36,7 @@ app.get('/redirect9', (req, res) => {
   res.redirect(302, '/uv/education/hvtrs8%2F-nmw%2Cge%2Frlcy-kktia%2Fgcmgs-7%3B9%3B%2Fqtwm%60lg-eu%7Bs');
 });
 
-// Serve the index.html when explicitly requested
-// Serve the index.html when explicitly requested
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
+
 
 // Serve the index.html when explicitly requested
 // Serve the index.html when explicitly requested
