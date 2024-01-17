@@ -73,11 +73,11 @@ app.get('/apps/devsisters-corporation/3475/cookie-run.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/apps/devsisters-corporation/3475/cookie-run.html'));
 });
 
-app.get('/play/uncube/7074/now.html', (req, res) => {
+app.get('/apps/uncube/7074/now.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/apps/uncube/7074/now.html'));
 });
 
-app.get('/play/epic-games/7308/fortnite.html', (req, res) => {
+app.get('/apps/epic-games/7308/fortnite.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/apps/epic-games/7308/fortnite.html'));
 });
 
