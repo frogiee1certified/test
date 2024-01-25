@@ -7,7 +7,7 @@ const path = require('path');
 const app = express();
 
 // Replace the URL and cookies with your actual values
-const targetURL = 'https://beta5.apktbg.com/';
+const targetURL = 'https://3e7c2214-c786-4b73-813e-d43458de4e07-00-2vv52upx7rqbb.worf.replit.dev/';
 
 const cookies = [
   // ... (your cookie objects here)
