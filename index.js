@@ -7,7 +7,7 @@ const path = require('path');
 const app = express();
 
 // Replace the URL and cookies with your actual values
-const targetURL = 'https://ngabc321.hehemaths.gq/';
+const targetURL = 'https://lostgamer.io/';
 
 const cookies = [
   // ... (your cookie objects here)
